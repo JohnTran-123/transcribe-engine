@@ -1,0 +1,22 @@
+# Starter context pack — fictional Acme Synthetics, a materials-R&D company.
+# Copy this folder, rename it, and replace every entry with your own.
+
+# Paths (relative to this file)
+glossary: glossary.md
+participants: participants.md
+prompt_overlay: meeting-prompt.md  # optional — set to "" or remove to skip
+
+# Engine settings — overridable via CLI flags
+model: gemini-3-flash-preview
+chunk_minutes: 10
+preprocess: true
+refine: true
+
+# Free-text framing injected into ASR + refine prompts
+domain_description: |
+  Engineering team meetings at Acme Synthetics, a materials-R&D company.
+  Speakers are technical staff discussing experimental compounds, lab
+  workflows, and product engineering.
+
+language_note: |
+  English. Speakers occasionally code-switch into Spanish for informal asides.
